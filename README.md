@@ -1,0 +1,1 @@
+A proof-of-concept microframework based on [Symfony Components](https://symfony.com/packages) and [PHP-DI](https://php-di.org/)
