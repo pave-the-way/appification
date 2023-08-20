@@ -1,0 +1,22 @@
+{
+    "require": {
+        "symfony/http-kernel": "^6.1",
+        "symfony/routing": "^6.1",
+        "symfony/event-dispatcher": "6.1",
+        "symfony/config": "6.1",
+        "symfony/uid": "^6.1",
+        "php-di/php-di": "^6.4",
+        "paragonie/sodium_compat": "^1.19",
+        "scssphp/scssphp": "^1.11",
+        "monolog/monolog": "^3.2",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Appification\\": "lib"
+        },
+        "files": [
+            "lib/bootstrap.php"
+        ]
+    }
+}
