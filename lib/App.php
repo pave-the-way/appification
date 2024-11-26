@@ -43,10 +43,10 @@ class App implements HttpKernelInterface, TerminableInterface
         return $this->wrapped->handle($request, $type, $catch);
     }
 
-    final public function terminate(Request $request, Response $response)
+    final public function terminate(Request $request, Response $response) : void
     {
         $this->boot();
-        return $this->wrapped->terminate($request, $response);
+        $this->wrapped->terminate($request, $response);
     }
 
     final public function boot() : void
